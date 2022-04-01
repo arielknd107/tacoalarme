@@ -1,0 +1,350 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500&display=swap');
+
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 200;
+}
+
+/* CONFIG BODY */
+body {
+  width: 100%;
+  background: #615f5f;
+  overflow-x: hidden;
+}
+
+/* HEADER FLEXBOX */
+header {
+  display: flex;
+  position: sticky; /* deixa header fixo */
+  top: 0; /* Matem a barra fixa no topo */     
+  left: 0; /* Matem a barra fixa ao lado */
+  width: 100vw;
+  justify-content: space-between;
+  align-items: center;
+  flex-flow: row wrap;
+  background: #696969;
+  border-bottom: 3px solid #7e7e7e;
+  box-shadow: 0px 10px 10px #2f2f2f;
+}
+
+/* TRATAMENTO TEXTO ARGOS DA LOGO */
+header h1 {
+  color: #00BFFF;
+  font-size: 56px;
+  margin: 0 80px 30px;
+  letter-spacing: 10px;
+  font-weight: 400;
+  text-shadow: 5px 9px 5px #2f2f2f;
+  box-shadow: 0px 5px #fff;
+}
+
+/* TRATAMENTO LINK DA LOGO */
+.logo a {
+  text-decoration: none;  /* Tira o sublinhado do link */ 
+}
+
+/* TRATAMENTO DO CONTAINER MIDIAS SOCIAIS */
+.m-s {
+  display: flex;
+  margin-left: 14%;
+  flex-flow: wrap;
+}
+
+/* TRATAMENTO DO CONTAINER BUTTON MIDIAS SOCIAIS */
+.m-s .button {
+  display: block;
+  width: 50px;
+  height: 50px;
+  margin: 5px;
+  flex-wrap: wrap;
+  border-radius: 50px;
+  text-transform: uppercase;
+  box-sizing: border-box;
+  font-size: 18px;
+  overflow: hidden;
+  background: #fff;
+  cursor: pointer;
+  box-shadow: 0px 10px 10px #2f2f2f;
+  transition: all 0.3s ease-out;
+}
+
+/* HOVER DO BUTTON DAS MIDIAS SOCIAIS*/
+.m-s .button:hover {
+  width: 175px;
+}
+
+/* COR DO LINK DAS MIDIAS SOCIAIS*/
+.m-s .button a {
+  color: #000;
+}
+
+/* HOVER DO LINK DAS MIDIAS SOCIAIS */
+.m-s .button a:hover {
+  color: #fff;
+}
+
+/* TRATAMENTO DO ICON MIDIAS SOCIAIS*/
+.m-s .button .icon {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  border-radius: 50px;
+  box-sizing: border-box;
+  line-height: 3.2;
+  transition: all 0.3s ease-out;
+}
+
+/* NTH-CHILD SELECIONA OS BUTTONS NAS SUA ORDEN E ALTERA AS PROPRIEDADES*/
+/* FACEBOOK */
+.m-s .button:nth-child(1) :hover.icon {
+  background: #4267b2;
+  color: #fff;
+}
+
+/* INSTAGRAM */
+.m-s .button:nth-child(2) :hover.icon {
+  background: #e1306c;
+  color: #fff;
+}
+
+/* YOUTUBE */
+.m-s .button:nth-child(3) :hover.icon {
+  background: #ff0000;
+  color: #fff;
+}
+
+/* TRATAMENTO DAS FONTES ICON DOS BUTTONS DE MIDIA SOCIAIS */
+.m-s .button .icon i {
+  font-size: 24px;
+  line-height: 50px;
+  transition: all 0.3s ease-out;
+}
+
+/* NTH-CHILD SELECIONA OS SPAN NAS SUA ORDEN */
+/* COR DO SPAN FACEBOOK */
+.m-s .button:nth-child(1) span {
+  color: #4267b2;
+  font-weight: 600;
+}
+
+/* COR DO SPAN INSTAGRAM */
+.m-s .button:nth-child(2) span {
+  color: #e1306c;
+  font-weight: 600;
+}
+
+/* COR DO SPAN YOUTUBE */
+.m-s .button:nth-child(3) span {
+  color: #ff0000;
+  font-weight: 600;
+}
+
+/* TRATAMENTO DO MENU */
+.menu {
+  display: flex;
+  margin: 0px 40px;
+  list-style-type: none;  /* tira os marcadores do lado dos links */
+  flex-flow: wrap;
+}
+
+/* TRATAMENTO DOS LINKS DO MENU */
+.menu li a {
+  color: #fff;
+  text-decoration: none;/* Tira o sublinhado dos links */
+  border-radius: 10px;
+  display: block;
+  padding: 15px;
+  margin-right: 50px;
+  height: 70px;
+  font-size: 24px;
+  font-weight: 300;
+}
+
+/* HOVER DOS LINKS DO MENU */
+.menu li a:hover {   
+  border-bottom: 3px solid #00BFFF; /* Cria uma borda fina ao redor do botao */
+  background-color: #00bfff1f;
+  border-radius: 10px;
+  transition: 0.5s;
+}
+
+/* TRATAMENTO DAS FONTE ICON DO MENU */
+.menu li a i {
+  margin: 3px;
+}
+
+/* TRATAMENTO DO CONTAINER PRINCIPAL */
+.container {
+  display: flex;
+  align-content: space-evenly;
+  justify-content: center;
+  margin: 0 auto;
+  /* coloca o container alinhado ao centro */
+  width: 80%;
+  max-width: 1350px;
+  flex-flow: row wrap;
+  background: #615f5f;
+}
+
+/* TRATAMENTO DO TITULO DO CONTAINER */
+.container h1 {
+  text-align: center;
+  margin: 60px 30px 0px;
+  color: #fff;
+  font-size: 3.5rem;
+  text-shadow: 5px 8px 3px #272727;
+}
+
+/* TRATAMENTO DOS TEXTOS DO CONTAINER PRINCIPAL */
+.container p {
+  text-align: center;
+  color: #fff;
+  font-size: 24px;
+  margin: 10px;
+}
+
+/* TRATAMENTO DO CONTAINER DAS IMAGENS DO CORPO */
+.item {
+  margin: 30px;
+}
+
+/* TRATAMENTO DOS TAMANHOS DAS IMG */
+.item img {
+  width: 600px;
+  border-radius: 10px;
+  box-shadow: 0px 8px 8px #181818;
+}
+
+/* TRATAMENTO DO TITULO SOBRE */
+.about h3 {
+  text-align: start;
+  margin: 80px 10px 10px;
+  color: #fff;
+  font-size: 3.5rem;
+  text-shadow: 3px 8px 4px #272727;
+}
+
+/* TRATAMENTO DO PARAGRAFOS DO TEXTO SOBRE */
+.about p {
+  text-align: start;
+  font-size: 24px;
+  margin: 10px;
+}
+
+/* TRATAMENTO DO FOOTER */
+footer {
+  display: flex;
+  /* position: sticky; */
+  align-items: center;
+  border-top: 3px solid #7e7e7e;
+  justify-content: space-around;
+  flex-flow: row wrap;
+  width: 100vw;
+  padding: 25px;
+  bottom: 0;
+  left: 0;
+  background: #000;
+}
+
+/* TRATAMENTO DO CONTAINER CONTATO NO FOOTER */
+.contatos {
+  display: flex;
+  flex-direction: column;
+  color: #fff;
+}
+
+/* TRATAMENTO DO TITULO DO CONTATO NO FOOTER */
+.contatos h1 {
+  font-size: 24px;
+}
+
+/* TRATAMENTO DOS ICON DOS CONTATOS NO FOOTER */
+.contatos i {
+  display: flex;
+  font-size: 18px;
+  align-items: center;
+  color: #00BFFF;
+}
+
+/* TRATAMENTO DOS PARAGRAFOS COM OS NUMEROS DE CONTATOS */
+.contatos p {
+  padding: 5px;
+  color: #fff;
+}
+
+/* POSICIONAMENTO DOS LINKS DO FOOTER */
+.footer-links {
+  display: flex;
+  flex-direction: column;
+}
+
+/* TRATAMENTO DO TITULO DO LINK FOOTER */
+.footer-links h1 {
+  color: #fff;
+  font-size: 24px;
+}
+
+/* TRATAMENTO DOS LINKS DO FOOTER */
+.footer-links a {
+  display: block;
+  padding: 5px;
+  letter-spacing: 3px;
+  text-decoration: none;
+  font-size: 18px;
+  color: #fff;
+}
+
+/* EFEITO DOS LINKS DO FOOTER */
+.footer-links a:hover {
+  color: #00BFFF;
+}
+
+/* TRATAMENTO DOS BOTOES DAS MIDIAS SOCIAIS DO RODAPE */
+.ms-footer {
+  display: flex;
+}
+
+/* TRATANDO DO POSICIONAMENTO DOS ELEMENTOS DO ICON MIDIAS SOCIAIS */
+.ms-icon-footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  margin: 10px;
+  border-radius: 50px;
+  background: #fff;
+}
+
+/* TROCANDO A COR AZUL DO LINK PARA PRETO */
+.ms-icon-footer a {
+  color: #000;
+}
+
+/* AJUSTANDO BEM AO CENTRO E TAMANHO DOS ICON */
+.ms-icon-footer i {
+  font-size: 30px;
+  line-height: 50px;
+}
+
+/* TRATAMENTO DO EFEITO NA COR ORIGINAL DOS ICON MIDIA SOCIAIS */
+.ms-footer .ms-icon-footer:nth-child(1):hover i {
+  color: #4267b2;
+  transition: 0.4s;
+}
+
+.ms-footer .ms-icon-footer:nth-child(2):hover i {
+  color: #e1306c;
+  transition: 0.4s;
+}
+
+.ms-footer .ms-icon-footer:nth-child(3):hover i {
+  color: #ff0000;
+  transition: 0.4s;
+}
